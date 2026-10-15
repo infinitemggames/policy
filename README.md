@@ -4,6 +4,8 @@ The privacy policy of the Square That game, as a one-page Next.js site for Verce
 
 The text is in [`app/page.tsx`](app/page.tsx): the developer's name, the contact email and the "Last updated" date are at the top of the file. The styles are in [`app/globals.css`](app/globals.css), and the favicon is the game icon ([`app/icon.png`](app/icon.png)).
 
+[`public/app-ads.txt`](public/app-ads.txt) names the AdMob account allowed to sell the game's ads. AdMob looks for it at the root of the developer website given in the Google Play listing, so that website should be this site's address.
+
 ## Running it locally
 
 ```bash

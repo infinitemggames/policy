@@ -5,7 +5,7 @@ import icon from "./icon.png";
 const APP = "Square That";
 const DEVELOPER = "Nemanja Maslaković";
 const EMAIL = "squarethatgame@yahoo.com";
-const LAST_UPDATED = "October 12, 2026";
+const LAST_UPDATED = "October 15, 2026";
 
 const SECTIONS = [
   { id: "who", title: "Who I am" },
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
             {APP} has no accounts and no sign-in. I never ask for your name, email address, location or
             contacts.
           </li>
-          <li>Your best score, your saved game and your settings stay on your device.</li>
+          <li>Your best score, your saved game, your level progress and your settings stay on your device.</li>
           <li>
             The game shows ads from Google AdMob. To show and measure them, Google collects some data from
             your device, such as your advertising ID and IP address.
@@ -99,6 +99,10 @@ export default function PrivacyPolicy() {
           <ul>
             <li>your best score;</li>
             <li>your unfinished game (the board, your shapes and your score), so you can continue later;</li>
+            <li>
+              your progress in the levels: the stars you earned in each level, and your hearts (how many you
+              have, and when the next one comes back);
+            </li>
             <li>your settings: whether music and sounds are on;</li>
             <li>whether you have finished the tutorial;</li>
             <li>how many games you have finished, which is used to space out the ads between games.</li>
