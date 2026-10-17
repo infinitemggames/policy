@@ -5,7 +5,7 @@ import icon from "./icon.png";
 const APP = "Square That";
 const DEVELOPER = "Nemanja Maslaković";
 const EMAIL = "squarethatgame@yahoo.com";
-const LAST_UPDATED = "October 15, 2026";
+const LAST_UPDATED = "October 17, 2026";
 
 const SECTIONS = [
   { id: "who", title: "Who I am" },
@@ -58,7 +58,8 @@ export default function PrivacyPolicy() {
           <li>Your best score, your saved game, your level progress and your settings stay on your device.</li>
           <li>
             The game shows ads from Google AdMob. To show and measure them, Google collects some data from
-            your device, such as your advertising ID and IP address.
+            your device, such as your advertising ID and IP address. On iPhone and iPad, the advertising ID is
+            used only if you allow it when the app asks.
           </li>
           <li>
             I don&apos;t sell your data, and I don&apos;t receive personal data from Google, only
@@ -82,7 +83,8 @@ export default function PrivacyPolicy() {
         <section id="who">
           <h2>1. Who I am</h2>
           <p>
-            {APP} is a puzzle game for Android (the &quot;app&quot;). It is developed and published by{" "}
+            {APP} is a puzzle game for Android, iPhone and iPad (the &quot;app&quot;). It is developed and
+            published by{" "}
             {DEVELOPER}, an independent developer (&quot;I&quot;, &quot;me&quot;). This policy explains
             what information the app uses, what the advertising service Google AdMob collects, why, and what
             choices you have.
@@ -95,7 +97,7 @@ export default function PrivacyPolicy() {
 
         <section id="on-device">
           <h2>2. Information stored on your device</h2>
-          <p>To work, the game saves a few things in its private storage on your phone:</p>
+          <p>To work, the game saves a few things in its private storage on your phone or tablet:</p>
           <ul>
             <li>your best score;</li>
             <li>your unfinished game (the board, your shapes and your score), so you can continue later;</li>
@@ -122,8 +124,9 @@ export default function PrivacyPolicy() {
           </p>
           <ul>
             <li>
-              <strong>Device identifiers:</strong> the Android advertising ID, the app set ID and similar
-              identifiers.
+              <strong>Device identifiers:</strong> on Android, the advertising ID, the app set ID and similar
+              identifiers; on iPhone and iPad, the identifier for vendors (IDFV) and, only if you allow
+              tracking, the advertising identifier (IDFA).
             </li>
             <li>
               <strong>IP address,</strong> which may be used to estimate the general (approximate) location
@@ -160,8 +163,8 @@ export default function PrivacyPolicy() {
           <ul>
             <li>
               <strong>Rewarded ads</strong> are optional. You choose to watch one to get a used-up power-up
-              back (once per game for each power-up) or to continue after you lose (once per game). You get
-              the reward after watching the ad.
+              back (once per game for each power-up), to continue after you lose (once per game), or to get a
+              heart for the levels. You get the reward after watching the ad.
             </li>
             <li>
               <strong>Interstitial ads</strong> are full-screen ads shown between games: after your first
@@ -176,6 +179,12 @@ export default function PrivacyPolicy() {
             advertising ID) or non-personalized (chosen based on the context, such as the app and your
             general location). In the European Economic Area, the United Kingdom and Switzerland,
             personalized ads are shown only where the legal requirements, including your consent, are met.
+          </p>
+          <p>
+            <strong>On iPhone and iPad,</strong> the app asks once, through Apple&apos;s App Tracking
+            Transparency prompt, whether ads may use your advertising identifier. If you choose &quot;Ask App
+            Not to Track&quot;, the identifier is not shared and the ads you see are not chosen by tracking
+            you across other companies&apos; apps and websites. The game works the same either way.
           </p>
         </section>
 
@@ -223,7 +232,8 @@ export default function PrivacyPolicy() {
           <ul>
             <li>
               <strong>On your device:</strong> the game&apos;s data is kept in the app&apos;s private storage,
-              which Android protects from other apps. It stays until you uninstall the app or clear its data.
+              which Android and iOS protect from other apps. It stays until you uninstall the app or clear its
+              data.
             </li>
             <li>
               <strong>With Google:</strong> the data the Google Mobile Ads SDK collects is encrypted in transit
@@ -243,17 +253,27 @@ export default function PrivacyPolicy() {
           <h2>8. Your choices and rights</h2>
           <ul>
             <li>
-              <strong>Advertising ID:</strong> you can reset or delete your advertising ID, or turn off ad
-              personalization, in your Android settings (usually <em>Settings → Google → Ads</em>, or{" "}
+              <strong>Advertising ID on Android:</strong> you can reset or delete your advertising ID, or turn
+              off ad personalization, in your Android settings (usually <em>Settings → Google → Ads</em>, or{" "}
               <em>Settings → Privacy → Ads</em>, depending on your device).
+            </li>
+            <li>
+              <strong>Tracking on iPhone and iPad:</strong> you can change your answer to the tracking prompt at
+              any time in <em>Settings → Privacy &amp; Security → Tracking</em>, where you can also stop all
+              apps from asking.
             </li>
             <li>
               <strong>Google ad settings:</strong> you can review and change how Google personalizes ads in{" "}
               <External href="https://myadcenter.google.com">My Ad Center</External>.
             </li>
             <li>
-              <strong>Data on your device:</strong> uninstall the game, or clear its data in Android settings,
-              to delete it.
+              <strong>Ad consent (EEA, UK and Switzerland):</strong> you can change the choices you made in
+              Google&apos;s consent form through <em>Privacy choices</em> at the bottom of the game&apos;s main
+              menu.
+            </li>
+            <li>
+              <strong>Data on your device:</strong> delete the game (on Android you can also clear its data in
+              the settings) to delete it.
             </li>
           </ul>
           <p>
@@ -277,6 +297,10 @@ export default function PrivacyPolicy() {
             <li>vibration, for the game&apos;s haptic feedback;</li>
             <li>audio settings, to play the game&apos;s music and sounds.</li>
           </ul>
+          <p>
+            On iPhone and iPad, the only permission the app asks for is tracking (App Tracking Transparency),
+            described in section 4. Saying no doesn&apos;t limit the game in any way.
+          </p>
           <p>
             The app does not access your location (GPS), camera, microphone, contacts, photos or files.
           </p>

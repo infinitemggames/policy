@@ -25,4 +25,6 @@ Paste the address into Google Play Console under *Policy and programs → App co
 
 ## When the game changes
 
-Update the policy (and the "Last updated" date) when the app starts collecting something new, or gets a new ad network, analytics or another SDK. What it says now matches the game as of October 2026: no accounts, progress stored on the device, Google AdMob rewarded and interstitial ads, and the Android permissions listed in section 9.
+Update the policy (and the "Last updated" date) when the app starts collecting something new, or gets a new ad network, analytics or another SDK. What it says now matches the game as of October 2026, on Android, iPhone and iPad: no accounts, progress stored on the device, Google AdMob rewarded and interstitial ads, Apple's App Tracking Transparency prompt on iOS, and the permissions listed in section 9.
+
+The same address is the *Privacy Policy URL* in App Store Connect (*App Information*). Apple also checks that the policy matches the *App Privacy* answers there.
